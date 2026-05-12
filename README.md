@@ -1,2 +1,9 @@
-# Basic-analysis-modules
-Son 3 módulos uno de Python, otro de bash y uno de powershell para hacer pruebas básicas SOC y un análisis básico de red
+# SystemAudit
+Se trata de un sistema de auditoría de red que funciona desde la consola y permite realizar distintos análisis de forma sencilla y directa.
+Entre sus funciones principales se encuentra la detección de dispositivos conectados a la red mediante ARP, el escaneo de puertos usando la técnica SYN para identificar cuáles están abiertos, y la obtención de información de servicios activos. También permite identificar el fabricante de un dispositivo a partir de su dirección MAC, lo cual puede ser útil para reconocer el tipo de equipo. 
+Otra característica importante es que calcula un nivel de riesgo para cada host analizado, lo que facilita detectar posibles vulnerabilidades o configuraciones inseguras dentro de la red.
+Además, la herramienta permite guardar los resultados en diferentes formatos como CSV, JSON o HTML, lo que ayuda a organizar la información.
+
+Este sistema está organizado de forma modular, lo que facilita entender cómo funciona y también hace más sencillo su mantenimiento o mejora en el futuro.
+Por un lado, cuenta con una parte de interacción con el usuario, que consiste en un menú en consola desde donde se pueden seleccionar las diferentes opciones de análisis. Por otro lado, está la parte lógica del sistema, donde se realizan todas las operaciones importantes, como el escaneo de red, el análisis de puertos y el procesamiento de la información obtenida. Esta es la parte central del funcionamiento de los scripts.
+También incluye una sección encargada de generar reportes, donde se pueden organizar los resultados y se exportan en distintos formatos, permitiendo que la información sea fácil de guardar, revisar o compartir. El sistema fue desarrollado en tres lenguajes diferentes: Python, PowerShell y Bash. Esto permite que la herramienta pueda ejecutarse en distintos sistemas operativos como Windows y Linux, adaptándose a cada entorno y haciendo que sea más flexible y accesible para diferentes usuarios.
